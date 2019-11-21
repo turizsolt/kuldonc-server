@@ -1,0 +1,11 @@
+{
+  "name": "kuldonc-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": "https://github.com/turizsolt/kuldonc-server.git",
+  "author": "Zsolt Turi <zsolt@stylehub.com>",
+  "license": "MIT"
+}
