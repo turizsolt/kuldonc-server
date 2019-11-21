@@ -7,5 +7,9 @@
   },
   "repository": "https://github.com/turizsolt/kuldonc-server.git",
   "author": "Zsolt Turi <zsolt@stylehub.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-gcm": "^1.0.2",
+    "socket.io": "^2.3.0"
+  }
 }
