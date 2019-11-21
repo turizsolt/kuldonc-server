@@ -11,7 +11,7 @@ io.on('connection', (socket) => {
 
     socket.on('token', (token) => {
         console.log('token', token);
-        token.push(token);
+        tokens.push(token);
     });
 
     socket.on('message', (data) => {
@@ -22,6 +22,7 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('message', data);
 
         // gcm notification
+        console.log('x',sendNotification);
         sendNotification(tokens, data.message);
     });
 

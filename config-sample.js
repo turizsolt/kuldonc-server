@@ -1,2 +1,2 @@
 const gcmApiKey = '<HERE COMES THE API KEY>';
-exports = gcmApiKey;
+module.exports = gcmApiKey;
