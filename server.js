@@ -1,6 +1,6 @@
 const sendNotification = require("./gcm");
 
-const io = require('socket.io');
+const io = require('socket.io')();
 io.listen(8647);
 
 const messages = [];
