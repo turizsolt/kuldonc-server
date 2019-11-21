@@ -3,9 +3,9 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const sslPath = require('./ssl-config');
-// const express = require('express');
+const express = require('express');
 
-// const app = express();
+const app = express();
 
 // Certificate
 const privateKey = fs.readFileSync(sslPath + 'privkey.pem', 'utf8');
@@ -18,9 +18,9 @@ const credentials = {
     ca: ca
 };
 
-// app.use((req, res) => {
-//     res.send('Hello there !');
-// });
+app.use((req, res) => {
+     res.send('Hello there !');
+});
 
 // Starting both http & https servers
 // const httpServer = http.createServer(app);
