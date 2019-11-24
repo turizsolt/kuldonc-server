@@ -3,11 +3,11 @@ const gcmApiKey = require("./config");
 
 const sender = new gcm.Sender(gcmApiKey);
 
-const sendNotification = (regTokens, text) => {
+const sendNotification = (regTokens, data) => {
     var message = new gcm.Message();
     message.addNotification({
-        "title": "Zsiri say's",
-        "body": text,
+        "title": data.name+" says",
+        "body": data.text,
         "requireInteraction": "true",
         "icon": "logo192.png",
         "click_action": "https://zsirim-e75c6.firebaseapp.com/",
